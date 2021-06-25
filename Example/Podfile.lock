@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SIOWaveView (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SIOWaveView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  SIOWaveView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SIOWaveView: cad3145fc761e101d5b373d7b9da2affd562e63c
+
+PODFILE CHECKSUM: e8ae1a6e0957884a1ea883e277d14567096e33ee
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,6 @@
+framework module SIOWaveView {
+  umbrella header "SIOWaveView-umbrella.h"
+
+  export *
+  module * { export * }
+}

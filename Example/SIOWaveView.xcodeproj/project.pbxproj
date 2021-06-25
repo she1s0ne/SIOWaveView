@@ -20,6 +20,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		713A1C0926857BC300E41C94 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 713A1C0826857BC300E41C94 /* test.mp3 */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		92B0D21689CDB185AD73979D /* Pods_SIOWaveView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7C718CDFB55E9CC5D84C2A /* Pods_SIOWaveView_Example.framework */; };
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		1E6B9B509BB9846C23C318FD /* Pods_SIOWaveView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SIOWaveView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32330F8E63F3E0F19C63C4D7 /* Pods-SIOWaveView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIOWaveView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SIOWaveView_Example/Pods-SIOWaveView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5237FCFD2A4A95D36461BEAE /* SIOWaveView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SIOWaveView.podspec; path = ../SIOWaveView.podspec; sourceTree = "<group>"; };
+		5237FCFD2A4A95D36461BEAE /* SIOWaveView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SIOWaveView.podspec; path = ../SIOWaveView.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SIOWaveView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIOWaveView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,9 +60,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		69417C65A377927C0C03C070 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		69417C65A377927C0C03C070 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		713A1C0826857BC300E41C94 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		718E8B16688EDD9DD5F94696 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		718E8B16688EDD9DD5F94696 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		86408665D5BE457AE126B10B /* Pods-SIOWaveView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIOWaveView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SIOWaveView_Tests/Pods-SIOWaveView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF6808A741E589249C4F7AB8 /* Pods-SIOWaveView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIOWaveView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SIOWaveView_Tests/Pods-SIOWaveView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		6003F593195388D20070C39A /* Example for SIOWaveView */ = {
 			isa = PBXGroup;
 			children = (
+				713A1C0826857BC300E41C94 /* test.mp3 */,
 				6003F59C195388D20070C39A /* SIOAppDelegate.h */,
 				6003F59D195388D20070C39A /* SIOAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +196,6 @@
 				86408665D5BE457AE126B10B /* Pods-SIOWaveView_Tests.debug.xcconfig */,
 				AF6808A741E589249C4F7AB8 /* Pods-SIOWaveView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				713A1C0926857BC300E41C94 /* test.mp3 in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
