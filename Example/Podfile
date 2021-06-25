@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SIOWaveView_Example' do
+  pod 'SIOWaveView', :path => '../'
+
+  target 'SIOWaveView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
