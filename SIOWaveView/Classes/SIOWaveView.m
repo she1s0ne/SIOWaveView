@@ -36,7 +36,7 @@
 }
 
 -(void)setAsset:(AVAsset *)asset{
-    if (!asset) {
+    if (asset == nil) {
         NSLog(@"路径asset错误");
         [self.loadingView stopAnimating];
         return;
@@ -52,7 +52,7 @@
     }];
 }
 -(void)setUrl:(NSURL *)url{
-    if (!url) {
+    if (url == nil) {
         NSLog(@"路径url错误");
         [self.loadingView stopAnimating];
         return;
@@ -62,7 +62,7 @@
 }
 
 -(void)setPath:(NSString *)path{
-    if (!path) {
+    if (path == nil) {
         NSLog(@"路径path错误");
         [self.loadingView stopAnimating];
         return;

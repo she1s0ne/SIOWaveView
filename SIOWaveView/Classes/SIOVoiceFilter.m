@@ -15,9 +15,11 @@
     NSInteger binSize = samplesCount / size.width;
     SInt16 *bytes = (SInt16 *)self.data.bytes;
     //    [self.data getBytes:&bytes length:self.data.length];
-    SInt16 maxSample = 0; //sint16两个字节的空间//以binSize为一个样本。每个样本中取一个最大数。也就是在固定范围取一个最大的数据保存，达到缩减目的
-    for (NSUInteger i= 0; i < samplesCount; i += binSize) {//在sampleCount（所有数据）个数据中抽样，抽样方法为在binSize个数据为一个样本，在样本中选取一个数据
-
+    SInt16 maxSample = 0;
+    //sint16两个字节的空间
+    //以binSize为一个样本。每个样本中取一个最大数。也就是在固定范围取一个最大的数据保存，达到缩减目的
+    for (NSUInteger i= 0; i < samplesCount; i += binSize) {
+        //在sampleCount（所有数据）个数据中抽样，抽样方法为在binSize个数据为一个样本，在样本中选取一个数据
         SInt16 sampleBin [binSize];
         for (NSUInteger j = 0; j < binSize; j++) {//先将每次抽样样本的binSize个数据遍历出来
             ///越界保护

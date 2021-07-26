@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SIOVoiceFilter : NSObject
 @property(nonatomic,strong)NSData *data;
 
+/// 过滤数据
+/// @param size size
 -(NSArray *)filteredSamplesForSize:(CGSize)size;
 @end
 

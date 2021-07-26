@@ -12,7 +12,7 @@
 +(void)loadAudioSamplesFormAsset:(AVAsset *)asset completionBlock:(SIOVoiceDataBlock)block{
     NSString *tracks = @"tracks";
     [asset loadValuesAsynchronouslyForKeys:@[tracks] completionHandler:^{
-        int status = [asset statusOfValueForKey:tracks error:nil];
+        NSInteger status = [asset statusOfValueForKey:tracks error:nil];
         NSData *sampleData;
         if (status == AVKeyValueStatusLoaded) {
             sampleData = [self readAudioSamplesFromAVsset:asset];
@@ -21,8 +21,8 @@
                     block(sampleData);
                 });
             }else{
+                //读取音频数据失败
                 block(nil);
-                //            读取音频数据失败
             }
         }
     }];
@@ -51,17 +51,22 @@
 
     NSMutableData *sampleData = [[NSMutableData alloc]init];
     while (assetReader.status == AVAssetReaderStatusReading) {
-
-        CMSampleBufferRef sampleBuffer = [output copyNextSampleBuffer]; //读取到数据
+        //读取到数据
+        CMSampleBufferRef sampleBuffer = [output copyNextSampleBuffer];
         if (sampleBuffer) {
-
-            CMBlockBufferRef blockBUfferRef = CMSampleBufferGetDataBuffer(sampleBuffer);//取出数据
-            size_t length = CMBlockBufferGetDataLength(blockBUfferRef); //返回一个大小，size_t针对不同的品台有不同的实现，扩展性更好
+            //取出数据
+            CMBlockBufferRef blockBUfferRef = CMSampleBufferGetDataBuffer(sampleBuffer);
+            size_t length = CMBlockBufferGetDataLength(blockBUfferRef);
+            //返回一个大小，size_t针对不同的品台有不同的实现，扩展性更好
             SInt16 sampleBytes[length];
-            CMBlockBufferCopyDataBytes(blockBUfferRef, 0, length, sampleBytes); //将数据放入数组
-            [sampleData appendBytes:sampleBytes length:length]; //将数据附加到data中
-            CMSampleBufferInvalidate(sampleBuffer);//销毁
-            CFRelease(sampleBuffer); //释放
+            //将数据放入数组
+            CMBlockBufferCopyDataBytes(blockBUfferRef, 0, length, sampleBytes);
+            //将数据附加到data中
+            [sampleData appendBytes:sampleBytes length:length];
+            //销毁
+            CMSampleBufferInvalidate(sampleBuffer);
+            //释放
+            CFRelease(sampleBuffer);
         }
     }
     if (assetReader.status == AVAssetReaderStatusCompleted) {
