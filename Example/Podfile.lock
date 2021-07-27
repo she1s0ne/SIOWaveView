@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SIOWaveView (0.1.0)
+  - SIOWaveView (1.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SIOWaveView: cad3145fc761e101d5b373d7b9da2affd562e63c
+  SIOWaveView: 838f7e23f7c153725ad2a15dae522bfa99524674
 
 PODFILE CHECKSUM: e8ae1a6e0957884a1ea883e277d14567096e33ee
 
