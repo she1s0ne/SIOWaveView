@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SIOWaveView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'Gets the spectrum of the audio file'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lp' => '972925287@qq.com' }
-  s.source           = { :git => 'https://github.com/she1s0ne/SIOWaveView', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/she1s0ne/SIOWaveView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
